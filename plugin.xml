@@ -11,15 +11,15 @@
 
 <platform name="android">
 
-	<config-file target="res/xml/config.xml" parent="plugins">
+	<!--config-file target="res/xml/config.xml" parent="plugins">
       <plugin name="SSLIgnoredWebView" value="com.giinos.cordova.webview.SSLIgnoredWebView"/>
-    </config-file>
+    </config-file-->
 
-	<!--config-file parent="/*" target="res/xml/config.xml">
-		<feature name="ssl-ignored-webview-plugin">
-			<param name="android-package" value="com.giinos.cordova.webview.SSLIgnoreWebView" />
+	<config-file parent="/*" target="res/xml/config.xml">
+		<feature name="SSLIgnoredWebView">
+			<param name="android-package" value="com.giinos.cordova.webview.SSLIgnoredWebView" />
 		</feature>
-	</config-file-->
+	</config-file>
 
 <!--config-file parent="/*" target="AndroidManifest.xml"></config-file-->
 
