@@ -18,6 +18,7 @@
 	<config-file parent="/*" target="res/xml/config.xml">
 		<feature name="SSLIgnoredWebView">
 			<param name="android-package" value="com.giinos.cordova.webview.SSLIgnoredWebView" />
+			<param name="onload" value="true" />
 		</feature>
 	</config-file>
 
