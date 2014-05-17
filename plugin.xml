@@ -23,6 +23,8 @@
 
 <!--config-file parent="/*" target="AndroidManifest.xml"></config-file-->
 
+<source-file src="src/com/giinos/phonegap/webview/CustomCordovaWebViewClient.java" target-dir="src/com/giinos/cordova/webview" />
+
 <source-file src="src/com/giinos/phonegap/webview/SSLIgnoredWebView.java" target-dir="src/com/giinos/cordova/webview" />
 
 </platform>
