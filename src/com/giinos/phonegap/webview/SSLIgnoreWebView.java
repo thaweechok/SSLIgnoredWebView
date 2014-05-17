@@ -5,7 +5,7 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
 
-public class SSLIgnoreWebView extends CordovaPlugin {
+public class SSLIgnoredWebView extends CordovaPlugin {
 
 	
 	@Override

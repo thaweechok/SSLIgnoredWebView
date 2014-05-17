@@ -1,2 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.giinos.cordova.webview" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"><name>ssl-ignored-webview-plugin</name><js-module name="ssl-ignored-webview-plugin" src="www/ssl-ignored-webview-plugin.js"><clobbers target="cordova.plugins.ssl-ignored-webview-plugin" /></js-module><platform name="android"><config-file parent="/*" target="res/xml/config.xml"><feature name="ssl-ignored-webview-plugin"><param name="android-package" value="com.giinos.cordova.webview.ssl-ignored-webview-plugin" /></feature></config-file><config-file parent="/*" target="AndroidManifest.xml"></config-file><source-file src="src/android/ssl-ignored-webview-plugin.java" target-dir="src/com/giinos/cordova/webview/ssl-ignored-webview-plugin" /></platform></plugin>
+<plugin id="com.giinos.cordova.webview" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<name>SSLIgnoredWebView</name>
+
+<!--js-module name="ssl-ignored-webview-plugin" src="www/ssl-ignored-webview-plugin.js">
+	<clobbers target="cordova.plugins.ssl-ignored-webview-plugin" />
+</js-module-->
+
+ <asset src="www/ssl-ignored-webview-plugin.js" target="plugins/ssl-ignored-webview-plugin.js" />
+
+<platform name="android">
+
+	<config-file target="res/xml/config.xml" parent="plugins">
+      <plugin name="SSLIgnoredWebView" value="com.giinos.cordova.webview.SSLIgnoredWebView"/>
+    </config-file>
+
+	<!--config-file parent="/*" target="res/xml/config.xml">
+		<feature name="ssl-ignored-webview-plugin">
+			<param name="android-package" value="com.giinos.cordova.webview.SSLIgnoreWebView" />
+		</feature>
+	</config-file-->
+
+<!--config-file parent="/*" target="AndroidManifest.xml"></config-file-->
+
+<source-file src="src/com/giinos/phonegap/webview/SSLIgnoredWebView.java" target-dir="src/com/giinos/cordova/webview" />
+
+</platform>
+
+</plugin>
