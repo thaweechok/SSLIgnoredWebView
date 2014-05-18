@@ -16,8 +16,8 @@ public class SSLIgnoredWebView extends CordovaPlugin {
 			CallbackContext callbackContext) throws JSONException {
 		// TODO Auto-generated method stub
 		
-		this.webView.setWebViewClient(new CustomCordovaWebViewClient(cordova));
-		callbackContext.success("set webview success. " + this.webView.getId());
+		//this.webView.setWebViewClient(new CustomCordovaWebViewClient(cordova));
+		callbackContext.success("set webview success. ");
 		return true;
 	}
 	
