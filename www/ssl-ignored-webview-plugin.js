@@ -1,5 +1,10 @@
-//var exec = require('cordova/exec');
+var exec = require('cordova/exec');
 
-window.SSLIgnoredWebView = function(arg0, success, error) {
-    cordova.exec(success, error, "SSLIgnoredWebView", "init", [arg0]);
+function SSLIgnoredWebView(){}
+
+SSLIgnoredWebView.prototype.init = function(arg0, success, error) {
+    exec(success, error, "SSLIgnoredWebView", "init", [arg0]);
 };
+
+var sslWebView = new SSLIgnoredWebView();
+module.exports = sslWebView;
